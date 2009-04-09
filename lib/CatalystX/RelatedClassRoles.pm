@@ -1,4 +1,5 @@
 package CatalystX::RelatedClassRoles;
+# ABSTRACT: apply roles to your Catalyst application-related classes
 
 use strict;
 use warnings;
@@ -57,5 +58,9 @@ various classes that your Catalyst application uses.
 =method apply_stats_class_roles
 
 Apply the named roles to one of the classes your application uses.
+
+=method init_meta
+
+Apply the Moose extensions that power this class.
 
 =cut
