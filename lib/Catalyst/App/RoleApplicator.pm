@@ -6,7 +6,7 @@ use warnings;
 use Moose ();
 use Moose::Util::MetaRole;
 use Moose::Exporter;
-use MooseX::Role::RelatedClassRoles;
+use MooseX::RelatedClassRoles;
 
 Moose::Exporter->setup_import_methods();
 
@@ -19,7 +19,7 @@ sub init_meta {
   # up-front, so anyone who doesn't set it will get explosions; also, it's just
   # MyApp, most of the time, so add your own roles
   for (qw(request response engine dispatcher stats)) {
-    Class::MOP::class_of('MooseX::Role::RelatedClassRoles')
+    Class::MOP::class_of('MooseX::RelatedClassRoles')
       ->apply($meta, name => $_, require_class_accessor => 0);
   }
 
