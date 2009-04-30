@@ -1,4 +1,4 @@
-package Catalyst::App::RoleApplicator;
+package CatalystX::RoleApplicator;
 # ABSTRACT: apply roles to your Catalyst application-related classes
 
 use strict;
@@ -36,7 +36,7 @@ __END__
 
   use base 'Catalyst';
   use Catalyst;
-  use Catalyst::App::RoleApplicator;
+  use CatalystX::RoleApplicator;
 
   __PACKAGE__->apply_request_class_roles(
     qw/My::Request::Role Other::Request::Role/
@@ -44,7 +44,7 @@ __END__
 
 =head1 DESCRIPTION
 
-Catalyst::App::RoleApplicator makes it easy for you to apply roles to all the
+CatalystX::RoleApplicator makes it easy for you to apply roles to all the
 various classes that your Catalyst application uses.
 
 =method apply_request_class_roles
