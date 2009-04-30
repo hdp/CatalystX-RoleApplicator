@@ -1,3 +1,7 @@
+0.005 Thu, 30 Apr 2009 15:13:52 -0400
+
+  - forgot (again) to completely change names
+
 0.004 Thu, 30 Apr 2009 15:04:24 -0400
 
   - renamed from Catalyst::App to CatalystX per mst's request

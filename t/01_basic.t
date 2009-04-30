@@ -7,7 +7,7 @@ use Test::More tests => 5;
 
   use base 'Catalyst';
   use Catalyst;
-  use Catalyst::App::RoleApplicator;
+  use CatalystX::RoleApplicator;
   __PACKAGE__->setup;
 }
 
